@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM Multimarcas | Moda Masculina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-border {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            padding: 3px;
+            border-radius: 50%;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('WhatsApp Image 2026-02-03 at 18.05.20.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5562992954962" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="py-6 px-4 md:px-10 flex justify-between items-center border-b border-gray-800 sticky top-0 bg-black z-50">
+        <div class="flex items-center gap-3">
+            <img src="WhatsApp Image 2026-02-03 at 18.02.00.jpeg" alt="Logo RM Multimarcas" class="w-12 h-12 object-contain">
+            <span class="font-bold text-xl tracking-tighter">RM MULTIMARCAS</span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="#inicio" class="hover:text-red-500 transition">Início</a>
+            <a href="#catalogo" class="hover:text-red-500 transition">Catálogo</a>
+            <a href="#sobre" class="hover:text-red-500 transition">Sobre Nós</a>
+            <a href="https://www.instagram.com/rstorem.vj/" target="_blank" class="hover:text-red-500 transition">Instagram</a>
+        </nav>
+        <a href="https://wa.me/5562992954962" class="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition">
+            Comprar Agora
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-[70vh] flex flex-col justify-center items-center text-center px-4">
+        <div class="gradient-border mb-6">
+            <img src="WhatsApp Image 2026-02-03 at 18.02.00.jpeg" alt="Logo RM" class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-black object-cover">
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Estilo e Exclusividade</h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-2xl mb-8">
+            As melhores marcas do mundo agora ao seu alcance. Do Varjão para todo o Brasil.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#catalogo" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold transition flex items-center gap-2">
+                <i class="fas fa-shopping-bag"></i> Ver Catálogo
+            </a>
+            <a href="https://wa.me/5562992954962" class="bg-transparent border border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-bold transition">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats/Instagram Style -->
+    <div class="bg-zinc-900 py-6 border-y border-gray-800">
+        <div class="container mx-auto px-4 flex justify-around text-center">
+            <div>
+                <span class="block text-2xl font-bold">21</span>
+                <span class="text-gray-400 text-sm uppercase">Posts</span>
+            </div>
+            <div>
+                <span class="block text-2xl font-bold">3.048</span>
+                <span class="text-gray-400 text-sm uppercase">Seguidores</span>
+            </div>
+            <div>
+                <span class="block text-2xl font-bold">960</span>
+                <span class="text-gray-400 text-sm uppercase">Seguindo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catálogo de Produtos -->
+    <section id="catalogo" class="py-20 px-4 container mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Destaques da Semana</h2>
+            <div class="h-1 w-20 bg-red-600 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Camisa Brasil Azul -->
+            <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+                <img src="WhatsApp Image 2026-02-03 at 18.05.20.jpeg" alt="Camisa Brasil Azul Ronaldo" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Esportivo</span>
+                    <h3 class="text-xl font-bold mt-2">Camisa Brasil Retrô - Ronaldo 9</h3>
+                    <p class="text-gray-400 mt-2">Tecido premium, todos os detalhes oficiais.</p>
+                    <a href="https://wa.me/5562992954962?text=Tenho interesse na camisa do Brasil Azul" class="mt-6 block w-full text-center bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition">Pedir no Whats</a>
+                </div>
+            </div>
+
+            <!-- Camisa Prada Preta -->
+            <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+                <img src="WhatsApp Image 2026-02-03 at 18.05.21 (1).jpeg" alt="Camisa Prada Preta" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-blue-500 font-bold uppercase tracking-widest">Grife</span>
+                    <h3 class="text-xl font-bold mt-2">T-shirt Prada Linea Rossa</h3>
+                    <p class="text-gray-400 mt-2">Corte Slim Fit, algodão egípcio com elastano.</p>
+                    <a href="https://wa.me/5562992954962?text=Tenho interesse na camisa Prada Preta" class="mt-6 block w-full text-center bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition">Pedir no Whats</a>
+                </div>
+            </div>
+
+            <!-- Camisa Santos -->
+            <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+                <img src="WhatsApp Image 2026-02-03 at 18.05.20 (2).jpg" alt="Camisa Santos FC" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-gray-400 font-bold uppercase tracking-widest">Clássicos</span>
+                    <h3 class="text-xl font-bold mt-2">Camisa Santos FC - Neymar Jr</h3>
+                    <p class="text-gray-400 mt-2">Edição especial com patch exclusivo.</p>
+                    <a href="https://wa.me/5562992954962?text=Tenho interesse na camisa do Santos" class="mt-6 block w-full text-center bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition">Pedir no Whats</a>
+                </div>
+            </div>
+
+            <!-- Galeria Adicional -->
+            <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+                <img src="image_ef7641.jpg" alt="Mix de Produtos" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mt-2">Variedade Amiri & LV</h3>
+                    <p class="text-gray-400 mt-2">As marcas mais desejadas do momento.</p>
+                    <a href="https://wa.me/5562992954962" class="mt-6 block w-full text-center bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition">Consultar Cores</a>
+                </div>
+            </div>
+
+            <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+                <img src="WhatsApp Image 2026-02-03 at 18.05.20 (4).jpeg" alt="Brasil Amarela Romario" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mt-2">Brasil Copa 94 - Romário</h3>
+                    <p class="text-gray-400 mt-2">O manto do Tetra com qualidade impecável.</p>
+                    <a href="https://wa.me/5562992954962" class="mt-6 block w-full text-center bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition">Garantir a Minha</a>
+                </div>
+            </div>
+
+            <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+                <img src="image_ef7948.jpg" alt="Jeans e Louis Vuitton" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mt-2">Conjuntos & Jeans</h3>
+                    <p class="text-gray-400 mt-2">O outfit completo para o seu final de semana.</p>
+                    <a href="https://wa.me/5562992954962" class="mt-6 block w-full text-center bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition">Ver Mais Modelos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-20 bg-zinc-950">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="image_ef7948.jpg" alt="Rodrigo Moreira RM Multimarcas" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500">
+                <div class="absolute -bottom-6 -right-6 bg-red-600 p-6 rounded-xl hidden md:block">
+                    <p class="text-2xl font-bold">Desde 2025</p>
+                    <p class="text-sm">Referência em Qualidade</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Nossa História</h2>
+                <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                    Fundada em 2025 por <strong class="text-white">Rodrigo Moreira</strong>, a RM Multimarcas nasceu do desejo de trazer o que há de mais exclusivo na moda masculina para a região do Varjão-GO.
+                </p>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    Trabalhamos com marcas de luxo e as camisas de times mais raras do mercado. Nosso compromisso é com a qualidade do tecido e o atendimento personalizado que você só encontra aqui. Enviamos para todo o Brasil com segurança e agilidade.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-red-600 text-xl"></i>
+                        <span>Loja Física em Varjão-GO</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-truck text-red-600 text-xl"></i>
+                        <span>Envios rápidos para todo o Brasil</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fab fa-whatsapp text-red-600 text-xl"></i>
+                        <span>Atendimento VIP via WhatsApp</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 px-4 border-t border-gray-900">
+        <div class="container mx-auto grid md:grid-cols-3 gap-10">
+            <div>
+                <img src="WhatsApp Image 2026-02-03 at 18.02.00.jpeg" alt="Logo RM" class="w-16 h-16 mb-4">
+                <p class="text-gray-500 max-w-xs">
+                    Elevando o nível do seu guarda-roupa com as melhores multimarcas do mercado.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 uppercase tracking-widest text-sm">Links Rápidos</h4>
+                <ul class="text-gray-500 space-y-2">
+                    <li><a href="#inicio" class="hover:text-white">Início</a></li>
+                    <li><a href="#catalogo" class="hover:text-white">Produtos</a></li>
+                    <li><a href="#sobre" class="hover:text-white">Sobre</a></li>
+                    <li><a href="https://www.instagram.com/rstorem.vj/" target="_blank" class="hover:text-white">Instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 uppercase tracking-widest text-sm">Contato</h4>
+                <p class="text-gray-500 mb-2">Varjão - Goiás</p>
+                <p class="text-gray-500 mb-4">(62) 99295-4962</p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/rstorem.vj/" class="text-2xl hover:text-red-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5562992954962" class="text-2xl hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-900 text-center text-gray-600 text-xs">
+            © 2026 RM Multimarcas - Todos os direitos reservados. Criado por Rodrigo Moreira.
+        </div>
+    </footer>
+
+</body>
+</html>
